@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --base-color: white;
+    --base-color-variant: rgb(223, 223, 223);
+    --primary-color: #24252A;
+    --accent-color: rgba(0, 136, 169, 1);
+    --accent-color-variant: rgb(0, 126, 158);
+    --switch-color: #24252A;
+}
+
+.darkmode{
+    --base-color: #24252A;
+    --base-color-variant: #000000;
+    --primary-color: white;
+    --switch-color: white;
+}
+
+@keyframes appear {
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+
+#theme-switch {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#theme-switch img:first-child{
+    display:none;
+}
+
+.darkmode #theme-switch img:first-child{
+    display : block;
+}
+
+.darkmode #theme-switch img:last-child{
+    display : none;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 24px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.main-container {
+    min-height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px
+}
+
+.main-container p {
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--base-color);
+    transition: all 0.3s ease 0s;
+}
+
+header:hover {
+    background-color: var(--base-color-variant);
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    transition: all 0.3s ease 0s;
+}
+
+a, button{
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: var(--base-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    padding: 9px 28px;
+}
+

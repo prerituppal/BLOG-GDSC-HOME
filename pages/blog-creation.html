@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog-creation.css" type="text/css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+    <title>My Blog</title>
+</head>
+<body>    
+    <header>
+        <h2 class="logo"><a href="index.html">PRERIT UPPAL</a></h2>
+        <a href="login.html"><button id="login-button">LOGIN</button></a>
+        <button id="theme-switch">
+            <img src="..\images\theme-change-black.svg" width="28px" height="28px">
+            <img src="..\images\theme-change-white.png" width="28px" height="28px">
+        </button>
+    </header>
+    <hr>
+    <div class="main-container">
+        <h1>Create A Blog</h1>
+        <form action="index.html">
+            <hr>
+            <div class="wrapper">
+                <div class="blog-title">
+                    <label class="input-label" for="title">Your Title:</label><br>
+                    <input type="text" class="input-box" placeholder="Title" required>
+                </div>
+                <div class="blog-image">
+                    <label class="input-label" for="title">Your Title Image:</label><br>
+                    <input type="file" accept="image/*" name="image">
+                </div>
+                <div class="blog-content">
+                    <label class="input-label" for="content">Your Content:</label><br>
+                    <textarea class="input-box" id="content" name="blog_content" rows="5" cols="40" placeholder="Enter your content here..." required></textarea><br>
+                </div>
+                <div>
+                    <a href="index.html"><input type="submit" value="Add Blog" class="submit"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
